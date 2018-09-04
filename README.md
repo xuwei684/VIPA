@@ -47,11 +47,11 @@ Output
 
 flanking_seq.txt
 The result file contains 5 cloumns.
-a. id
-b. break position
-c. insert_len
-d. flag indicates the form of the repair products
-e. the sequence of the repair products
+    a. id
+    b. break position
+    c. insert_len
+    d. flag indicates the form of the repair products
+    e. the sequence of the repair products
 
 
 
