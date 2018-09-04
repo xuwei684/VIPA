@@ -47,6 +47,7 @@ Output
 
 flanking_seq.txt
 The result file contains 5 cloumns.
+
     a. id
     b. break position
     c. insert_len
@@ -71,7 +72,8 @@ Output
 
 sdmmej.html
 The html file contains 4 cloumns.
-a. the serial number of the sequence in the flanking_seq.txt
-b. id
-c. type
-d. the sequence of repair products with primer repeats underlined
+
+    a. the serial number of the sequence in the flanking_seq.txt
+    b. id
+    c. type
+    d. the sequence of repair products with primer repeats underlined
