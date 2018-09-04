@@ -8,11 +8,12 @@ Quick start
 
 Download the `flanking_seq.pl` and `sdmmej_classification.pl` script, and view the detailed usage manual:
 
-    curl -LO https://github.com/**/SDMMEJ-classification/archive/master.zip; unzip master.zip
+    curl -LO https://github.com/xuwei684/SDMMEJ/archive/master.zip; unzip master.zip
     perl SDMMEJ-classification-master/flanking_seq.pl -h
     perl SDMMEJ-classification-master/sdmmej_classification.pl -h
 
 Step 1: Get the flanking sequence around the break site.
+--------------------------------------------------------
 
 Run the `flanking_seq.pl` script using the break result file as an input:
 
@@ -22,14 +23,14 @@ Inputs
 
 1). break result: the result of the pipeline for finding the break point in cancer, the breakresult should contains at least 8 cloumns
 
-a. id
-b. hpv_start
-c. hpv_end
-d. hpv_map
-e. human_start
-f. human_end
-g. human_map
-h. human_break
+    a. id
+    b. hpv_start
+    c. hpv_end
+    d. hpv_map
+    e. human_start
+    f. human_end
+    g. human_map
+    h. human_break
     
 Notice: the human genome position should be identical with the genome you used to find the break point, and the name of the chromosome should be identical with the genome
 
@@ -55,6 +56,7 @@ e. the sequence of the repair products
 
 
 Step 2: Find the repeats and classify the SDMMEJ-classification
+---------------------------------------------------------------
 
 Run the `sdmmej_classification.pl` script using the output of the `flanking_seq.pl` as an inout:
 
