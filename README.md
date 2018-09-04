@@ -31,8 +31,7 @@ f. human_end
 g. human_map
 h. human_break
     
-    the human genome position should be identical with the genome you used to find the break point, 
-	and the name of the chromosome should be identical with the genome
+Notice: the human genome position should be identical with the genome you used to find the break point, and the name of the chromosome should be identical with the genome
 
 2). genome: human genome
     the human genome should be identical with the genome you used to find the break point
