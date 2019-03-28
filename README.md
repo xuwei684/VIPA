@@ -31,7 +31,7 @@ Inputs
     f. human_end
     g. human_map
     h. human_break
-    
+
 Notice: the human genome position should be identical with the genome you used to find the break point, and the name of the chromosome should be identical with the genome
 
 2). genome: human genome
@@ -40,7 +40,7 @@ Notice: the human genome position should be identical with the genome you used t
 3). flank: the length that you want to get around the break point
 
 4). fqdir or fafile: a directory contains the sanger sequences or the assembled sequences, the sequence file name should be identical
- with the id in break result; a fasta file contains the sanger sequences or the assembled sequences, the sequence id in the file should be 
+ with the id in break result; a fasta file contains the sanger sequences or the assembled sequences, the sequence id in the file should be
  identical with the id in break result.
 
 Output
@@ -59,9 +59,9 @@ The result file contains 5 cloumns.
 Step 2: Find the repeats and classify the SDMMEJ-classification
 ---------------------------------------------------------------
 
-Run the `sdmmej_classification.pl` script using the output of the `flanking_seq.pl` as an inout:
+Run the `sdmmej_classification.pl` script using the output of the `flanking_seq.pl` as an input:
 
-    perl sdmmej_classification.pl -b <flanking_seq.txt> -p <primer length> -m <mh length> -o <output file>
+    perl sdmmej_classification.pl -s <flanking_seq.txt> -p <primer length> -m <mh length> -o <output file>
 
 Inputs
 flanking_seq.txt
