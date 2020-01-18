@@ -17,46 +17,44 @@ Step 1: Get the flanking sequence around the break site.
 
 Run the `flanking_seq.pl` script using the break result file as an input:
 
-    perl flanking_seq.pl -b <break result> -g <genome> -f <flank> -s <fqdir or fafile> -o <output file>
+    perl flanking_seq.pl -b <breakpoint results> -g <genome> -f <flanking>  -o <output file>
 
-Inputs
+**Inputs**
 
-1). breakpoint results: the result of the pipeline for finding the breakpoints in cancer genome, and the breakpoint results should contains **at least 8 cloumns**：
+1). breakpoint results: the result of the pipeline for finding the breakpoints in cancer genome, and the breakpoint results should contains **at least 9 cloumns**：
                                             
-    a. id
-    b. hpv_start
-    c. hpv_end
-    d. hpv_map
-    e. human_start
-    f. human_end
-    g. human_map
-    h. human_break
+    a. breakpoing id
+    b. virus_start, ie.1
+    c. virus_end    ie.113
+    d. virus_map    ie.hpv16:1439-1551
+    e. human_start  ie.114
+    f. human_end    ie.180
+    g. human_map    ie.chr3:93470597-93470663
+    h. human_breakpoint ie.chr3:93470597
+    i. breakpoint sequence
 
-Notice: the human genome position should be identical with the genome you used to find the break point, and the name of the chromosome should be identical with the genome
+Notice: the human and virus genome mapping position should be identical with the genome you used to find the breakpoint identification.
 
 2). genome: human genome
-    the human genome should be identical with the genome you used to find the break point
+    the human genome should be identical with the genome you used to find the breakpoints
 
-3). flank: the length that you want to get around the break point
+3). flanking: the length that you want to detect the SD-EJ around the breakpoints
 
-4). fqdir or fafile: a directory contains the sanger sequences or the assembled sequences, the sequence file name should be identical
- with the id in break result; a fasta file contains the sanger sequences or the assembled sequences, the sequence id in the file should be
- identical with the id in break result.
 
-Output
+**Output**
 
 flanking_seq.txt
 The result file contains 5 cloumns.
 
-    a. id
-    b. break position
-    c. insert_len
-    d. flag indicates the form of the repair products
-    e. the sequence of the repair products
+    a. ids
+    b. breakpoint positions
+    c. insert sequence lengths
+    d. flags indicating the form of the SD-EJ repair products
+    e. the sequences of the repair products of given flanking regions
 
 
 
-Step 2: Find the repeats and classify the SDEJ pathway classification
+Step 2: Find the repeats and classify the SD-EJ pathway classification
 ---------------------------------------------------------------
 
 Run the `SDEJ_classification.pl` script using the output of the `flanking_seq.pl` as an input:
