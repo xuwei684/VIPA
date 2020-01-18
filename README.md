@@ -21,10 +21,10 @@ Run the `flanking_seq.pl` script using the break result file as an input:
 
 **Inputs**
 
-1). breakpoint results: the result of the pipeline for finding the breakpoints in cancer genome, and the breakpoint results should contains **at least 9 cloumns**：
+1). breakpoint results: the result of the pipeline for finding the breakpoints in cancer genome, and the breakpoint results should contains **at least 9 cloumns**，below is the example of human-virus breakpoint results：
                                             
-    a. breakpoing id
-    b. virus_start, ie.1
+    a. id
+    b. virus_start ie.1
     c. virus_end    ie.113
     d. virus_map    ie.hpv16:1439-1551
     e. human_start  ie.114
