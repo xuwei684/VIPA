@@ -18,7 +18,7 @@ my $output = "";
 
 while (scalar(@ARGV) > 0){
 	my $this_arg = shift @ARGV;
-	if( $this_arg eq '-h') {print help_text; exit; }
+	if( $this_arg eq '-h') {print help_text(); exit; }
 	
 	elsif ($this_arg eq '-s') {$break_seq = shift @ARGV;}
 	elsif ($this_arg eq '-p') {$pl = shift @ARGV;}
@@ -363,10 +363,10 @@ sub format{
 sub help_text {
 	return <<HELP;
 
-sdmmej_classification.pl - Script to find primer repeat around the break site and classify
+SDEJ_classification.pl - Script to find primer repeat around the break site and classify
 
 SYNOPSIS
-perl sdmmej_classification.pl -s <break seq> -p <primer length> -m <mh length> -o <output file>
+perl SDEJ_classification.pl -s <break seq> -p <primer length> -m <mh length> -o <output file>
 
 OPTIONS
 -s The output of flanking_seq.pl, it contains flanking sequence of break site
@@ -375,10 +375,10 @@ OPTIONS
 -o Output file name with a html extension
 
 DESCRIPTION
-This is a command-line interface to sdmmej_classification.pl
+This is a command-line interface to SDEJ_classification.pl
 
 AUTHOURS
-Hu Zheng <lt>email<gt>
+Hu Zheng <lt>email huzheng1998@163.com<gt>
 
 HELP
 }
