@@ -12,10 +12,10 @@ Download the `flanking_seq.pl` and `SDEJ_classification.pl` scripts, and view th
     perl VIPA-master/SDEJ/flanking_seq.pl -h
     perl VIPA-master/SDEJ/SDEJ_classification.pl -h
 
-Step 1: Get the flanking sequence around the break site.
+Step 1: Get the flanking sequence around the breakpoint site.
 --------------------------------------------------------
 
-Run the `flanking_seq.pl` script using the break result file as an input:
+Run the `flanking_seq.pl` script using the breakpoint results as an input:
 
     perl flanking_seq.pl -b <breakpoint results> -g <genome> -f <flanking>  -o <output file>
 
@@ -54,7 +54,7 @@ The result file contains 5 cloumns.
 
 
 
-Step 2: Find the repeats and classify the SD-EJ pathway classification
+Step 2: Find the repeats and classify the SD-EJ pathway
 ---------------------------------------------------------------
 
 Run the `SDEJ_classification.pl` script using the output of the `flanking_seq.pl` as an input:
