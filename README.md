@@ -61,17 +61,16 @@ Run the `SDEJ_classification.pl` script using the output of the `flanking_seq.pl
 
     perl SDEJ_classification.pl -s <flanking_seq.txt> -p <primer length> -m <mh length> -o <output file>
 
-Inputs
+**Inputs**
 flanking_seq.txt
 
 The -p and -m can be omitted and will use the default value 2 and 1.
 
-Output
-
-SDEJ.html
+**Output**
+SD-EJ.html
 The html file contains 4 cloumns.
 
-    a. the serial number of the sequence in the flanking_seq.txt
-    b. id
-    c. type
-    d. the sequence of repair products with primer repeats underlined
+    a. the serial number of the sequences in the flanking_seq.txt
+    b. ids
+    c. SD-EJ Repair type
+    d. The sequence of repair products with primer repeats underlined
