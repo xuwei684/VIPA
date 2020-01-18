@@ -1,16 +1,16 @@
-SDMMEJ-classification
+SD-EJ Tool
 =====================
 
-A classification tool of synthesis-dependent microhomology-mediated end joining
+SD-EJ Tool is a classification tool of synthesis-dependent microhomology-mediated end joining for fusion sequence, for instance, human-virus breakpoint sequences. The SD-EJ Tool consists of tow scripts, including flanking_seq.pl and SDEJ_classification.pl.
 
 Quick start
 -----------
 
-Download the `flanking_seq.pl` and `sdmmej_classification.pl` script, and view the detailed usage manual:
+Download the `flanking_seq.pl` and `SDEJ_classification.pl` scripts, and view the detailed usage manual:
 
-    curl -LO https://github.com/xuwei684/SDMMEJ/archive/master.zip; unzip master.zip
-    perl SDMMEJ-classification-master/flanking_seq.pl -h
-    perl SDMMEJ-classification-master/sdmmej_classification.pl -h
+    curl -LO https://github.com/xuwei684/VIPA/archive/master.zip; unzip master.zip
+    perl VIPA-master/SDEJ/flanking_seq.pl -h
+    perl VIPA-master/SDEJ/SDEJ_classification.pl -h
 
 Step 1: Get the flanking sequence around the break site.
 --------------------------------------------------------
@@ -21,8 +21,8 @@ Run the `flanking_seq.pl` script using the break result file as an input:
 
 Inputs
 
-1). break result: the result of the pipeline for finding the break point in cancer, the breakresult should contains at least 8 cloumns
-
+1). breakpoint results: the result of the pipeline for finding the breakpoints in cancer genome, and the breakpoint results should contains **at least 8 cloumns**：
+                                            
     a. id
     b. hpv_start
     c. hpv_end
@@ -56,21 +56,21 @@ The result file contains 5 cloumns.
 
 
 
-Step 2: Find the repeats and classify the SDMMEJ-classification
+Step 2: Find the repeats and classify the SDEJ pathway classification
 ---------------------------------------------------------------
 
-Run the `sdmmej_classification.pl` script using the output of the `flanking_seq.pl` as an input:
+Run the `SDEJ_classification.pl` script using the output of the `flanking_seq.pl` as an input:
 
-    perl sdmmej_classification.pl -s <flanking_seq.txt> -p <primer length> -m <mh length> -o <output file>
+    perl SDEJ_classification.pl -s <flanking_seq.txt> -p <primer length> -m <mh length> -o <output file>
 
 Inputs
 flanking_seq.txt
 
-The -p and -m can be omitted and will use the default value 3 and 1.
+The -p and -m can be omitted and will use the default value 2 and 1.
 
 Output
 
-sdmmej.html
+SDEJ.html
 The html file contains 4 cloumns.
 
     a. the serial number of the sequence in the flanking_seq.txt
