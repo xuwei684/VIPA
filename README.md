@@ -1,7 +1,18 @@
 SD-EJ Tool
 =====================
 
-SD-EJ Tool is a classification tool of synthesis-dependent microhomology-mediated end joining for fusion sequence, for instance, human-virus breakpoint sequences. The SD-EJ Tool consists of tow scripts, including flanking_seq.pl and SDEJ_classification.pl.
+
+
+Introduction
+-----------
+
+SD-EJ Tool is a classification tool of synthesis-dependent microhomology-mediated end joining for fusion sequence, for instance, human-virus breakpoint sequences. 
+The SD-EJ Tool consists of tow scripts, including flanking_seq.pl and SDEJ_classification.pl.
+
+System requirements
+-----------
+SD-EJ Tool does not rely on any software and can run in any Linux and MacOS system. For Windows users, it requires perl programming languages, which can be installed by Strawberry Perl.
+
 
 Quick start
 -----------
@@ -53,7 +64,7 @@ The result file contains 5 cloumns.
     d. flags indicating the form of the SD-EJ repair products
     e. the sequences of the repair products of given flanking regions
 
-
+** Run time **
 
 Step 2: Find the repeats and classify the SD-EJ pathway
 ---------------------------------------------------------------
@@ -78,3 +89,7 @@ The html file contains 4 cloumns.
     b. ids
     c. SD-EJ Repair type
     d. The sequence of repair products with primer repeats underlined
+
+** Run time **
+
+
