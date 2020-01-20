@@ -63,7 +63,7 @@ Run the `flanking_seq.pl` script using the breakpoint results as an input:
 
     perl  VIPA-master/SDEJ/flanking_seq.pl -b <breakpoint results> -g <genome> -f <flanking>  -o <output file>
 
-**Input
+**Input**
 
 1). breakpoint results: the result of the pipeline for finding the breakpoints in cancer genome, and the breakpoint results should contains **at least 9 cloumns**，below is the example of human-virus breakpoint results：
                                             
@@ -85,7 +85,7 @@ Notice: the human and virus genome mapping position should be identical with the
 3). flanking: the length that you want to detect the SD-EJ around the breakpoints
 
 
-**Output
+**Output**
 
 flanking_seq.txt
 
@@ -97,7 +97,7 @@ The result file contains 5 cloumns.
     d. flags indicating the form of the SD-EJ repair products
     e. the sequences of the repair products of given flanking regions
 
-**Run time on MacBook Pro
+**Run time on MacBook Pro**
 
 Command:
 
@@ -117,13 +117,13 @@ Run the `SDEJ_classification.pl` script using the output of the `flanking_seq.pl
 
     perl VIPA-master/SDEJ/SDEJ_classification.pl -s <flanking_seq.txt> -p <primer length> -m <mh length> -o <output file>
 
-**Input
+**Input**
 
 flanking_seq.txt
 
 The -p and -m can be omitted and will use the default value 2 and 1.
 
-**Output
+**Output**
 
 SDEJ.html
 
@@ -134,7 +134,7 @@ The html file contains 4 cloumns.
     c. SD-EJ Repair type
     d. The sequence of repair products with primer repeats underlined
 
-**Run time
+**Run time on MacBook Pro**
 
 Command:
 
