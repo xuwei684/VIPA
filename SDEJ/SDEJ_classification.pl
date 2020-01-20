@@ -378,7 +378,7 @@ DESCRIPTION
 This is a command-line interface to SDEJ_classification.pl
 
 AUTHOURS
-Hu Zheng <lt>email huzheng1998@163.com<gt>
+Hu Zheng <lt>email huzheng1998\@163.com<lt>
 
 HELP
 }
