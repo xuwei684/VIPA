@@ -55,7 +55,7 @@ open OUT, ">$output_fname" || die "$!\n";
 
 while(<FILE>){
 	chomp;
-	next if(/Sam/);
+	next if(/id/);
 	my ($id,$hpvS,$hpvE,$hpvmap,$hgS,$hgE,$hgmap,$break_pos,$sanger) = split(/\s+/,$_);
 	
 	my ($chr1,$hpvS1,$hpvE1) = split(/:|-/,$hpvmap);
