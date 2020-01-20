@@ -10,10 +10,19 @@ SD-EJ Tool is a classification tool of synthesis-dependent microhomology-mediate
 The SD-EJ Tool consists of tow scripts, including flanking_seq.pl and SDEJ_classification.pl.
 
 
+
+SD-EJ Algorithm's Flow
+-----------
+
+![image](https://github.com/xuwei684/VIPA/blob/master/flow.png)
+
+
+
 System requirements
 -----------
 
 SD-EJ Tool does not rely on any software and can run in any Linux and MacOS system. For Windows users, it requires perl programming languages, which can be installed by Strawberry Perl.
+
 
 
 Installation guide
@@ -41,6 +50,8 @@ Time:
     user	0m0.054s
     sys	0m0.031s
 
+
+
 Demo
 -----------
 
@@ -49,6 +60,8 @@ We provide test example includes three files:
     test/breakpoints_results    the initial input dataset includes one HBV-human breakpoint
     test/flanking_seq.txt       the output of first script, flanking_seq.pl
     test/SDEJ.html              the final output of second script, SDEJ_classification.pl 
+
+
 
 
 Instruction for use
