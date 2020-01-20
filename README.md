@@ -3,7 +3,7 @@ SD-EJ Tool
 
 
 
-Introduction
+Overview
 -----------
 
 SD-EJ Tool is a classification tool of synthesis-dependent microhomology-mediated end joining for fusion sequence, for instance, human-virus breakpoint sequences. 
@@ -145,4 +145,9 @@ Time:
     real	0m0.050s
     user	0m0.010s
     sys	0m0.032s
+    
 
+License
+-----------
+
+This project is covered under the Apache 2.0 License.
