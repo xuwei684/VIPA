@@ -31,15 +31,15 @@ Two scripts could be used directly and there is no need to compile, to view the 
 
 Time:
 
-time  curl -LO https://github.com/xuwei684/VIPA/archive/master.zip;
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+    time  curl -LO https://github.com/xuwei684/VIPA/archive/master.zip;
+     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100   118    0   118    0     0    132      0 --:--:-- --:--:-- --:--:--   132
-100  7936    0  7936    0     0   4458      0 --:--:--  0:00:01 --:--:-- 14146
+    100   118    0   118    0     0    132      0 --:--:-- --:--:-- --:--:--   132
+    100  7936    0  7936    0     0   4458      0 --:--:--  0:00:01 --:--:-- 14146
 
-real	0m1.848s
-user	0m0.054s
-sys	0m0.031s
+    real	0m1.848s
+    user	0m0.054s
+    sys	0m0.031s
 
 Demo
 -----------
@@ -105,9 +105,9 @@ Command:
 
 Time:
 
-real	0m0.026s
-user	0m0.010s
-sys	0m0.012s
+    real	0m0.026s
+    user	0m0.010s
+    sys	0m0.012s
 
 
 Step 2: Find the repeats and classify the SD-EJ pathway
@@ -142,7 +142,7 @@ Command:
 
 Time:
 
-real	0m0.050s
-user	0m0.010s
-sys	0m0.032s
+    real	0m0.050s
+    user	0m0.010s
+    sys	0m0.032s
 
