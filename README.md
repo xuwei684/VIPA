@@ -14,7 +14,7 @@ The SD-EJ Tool consists of tow scripts, including flanking_seq.pl and SDEJ_class
 SD-EJ Algorithm's Flow
 -----------
 
-<div align=center><img width="150" height="150" src="https://github.com/xuwei684/VIPA/blob/master/flow.png"/></div>
+<div align=center><img width="450" height="550" src="https://github.com/xuwei684/VIPA/blob/master/flow.png"/></div>
 
 
 
